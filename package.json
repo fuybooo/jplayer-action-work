@@ -1,0 +1,12 @@
+{
+  "name": "jplayer-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "codelyzer": "^4.4.4",
+    "jplayer": "^2.9.2",
+    "jquery": "^3.3.1"
+  }
+}

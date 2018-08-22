@@ -1,0 +1,38 @@
+html, body {
+    background-color: #fff;
+}
+/* header */
+.imc-header {
+    text-align: center;
+    font-size: 26px;
+    color: #aaa;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fafafa;
+}
+.imc-main {
+}
+/* music list */
+.imc-list {
+    list-style: none;
+}
+.imc-list-item {
+    height: 70px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.imc-list-item:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+.imc-item-name {
+    color: #333;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+}
+.imc-item-info {
+    color: #aeaeae;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+}

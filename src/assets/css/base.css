@@ -1,4 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
+.dn {
+  display: none !important;
+}
+.df {
+  display: flex !important;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.h {
+  height: 100%;
+}
+.text-title {
+  color: rgba(255,255,255,.8);
+}
+.text-gray {
+  color: #797979;
+}
+.text-aux {
+  color: #9b9b9b;
+}
+.f12 {
+  font-size: 12px;
 }

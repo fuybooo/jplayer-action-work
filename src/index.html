@@ -6,28 +6,60 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>jplayer实战</title>
-  <!--库css文件-->
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../node_modules/jplayer/dist/skin/blue.monday/css/jplayer.blue.monday.min.css">
-  <!--本地css文件-->
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-<header class="imc-header imc-header-js">歌曲列表</header>
+<header class="imc-header imc-header-js">简单播放器</header>
 <main class="imc-main">
   <ul class="imc-list imc-list-js"></ul>
   <div class="imc-player-box">
     <div class="imc-player"></div>
   </div>
+  <div id="imc-music-player-js"></div>
+  <div class="imc-music-player-box imc-music-player-box-js">
+    <div class="imc-control h">
+      <i class="imc-ctrl imc-ctrl-prev imc-ctrl-prev-js mr10"></i>
+      <i class="imc-ctrl imc-ctrl-play imc-ctrl-play-js"></i>
+      <i class="imc-ctrl imc-ctrl-pause imc-ctrl-pause-js dn"></i>
+      <i class="imc-ctrl imc-ctrl-next imc-ctrl-next-js ml10"></i>
+    </div>
+    <div class="imc-progress-box">
+      <div class="imc-music-img imc-music-img-js"></div>
+      <div class="imc-music-bar">
+        <div class="imc-music-title">
+          <span class="text-title f12 imc-title-text-js"></span>
+          <span class="text-aux f12 pl10 imc-artist-text-js"></span>
+        </div>
+        <div class="imc-music-progress">
+          <div class="imc-bar-box">
+            <div class="imc-progress imc-progress-bg imc-progress-bg-js"></div>
+            <div class="imc-progress imc-progress-current imc-progress-current-js"></div>
+            <div class="imc-progress imc-progress-mask imc-progress-mask-js"></div>
+            <i class="imc-dot imc-dot-big imc-dot-big-js"></i>
+          </div>
+          <div>
+            <span class="text-aux imc-time-current-js"></span><span class="text-gray">/</span><span class="text-gray imc-time-total-js"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="imc-voice-box">
+      <div class="imc-voice-bg imc-voice-bg-js dn">
+        <div class="imc-voice-bar imc-voice-bar-js"></div>
+        <i class="imc-dot imc-dot-small imc-dot-small-js"></i>
+        <div class="imc-voice-bar-mask imc-voice-bar-mask-js"></div>
+      </div>
+      <div class="imc-ctrl imc-ctrl-vol imc-ctrl-img-js"></div>
+      <div class="imc-ctrl imc-ctrl-repeat-list imc-ctrl-repeat-js"></div>
+    </div>
+  </div>
 </main>
 <!--库js文件-->
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../node_modules/jplayer/dist/jplayer/jquery.jplayer.js"></script>
 <!--本地js文件-->
 <script src="./app/model/model.js"></script>
-<script src="./app/util/util.js"></script>
 <script src="./app/index.js"></script>
 </body>
 </html>
